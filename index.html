@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All 4 Cats</title>
+    <title>All 4 Cats - Магазин для ваших питомцев</title>
     <style>
         :root {
             --gray-dark: #2c3e50;
@@ -162,7 +162,7 @@
         }
         
         .product img {
-            max-width: 100%;
+            width: 100%;
             height: 150px;
             object-fit: cover;
             border-radius: 5px;
@@ -253,7 +253,7 @@
             <h2>Кликер кота</h2>
             <p>Кликай на кота, чтобы зарабатывать деньги для покупок!</p>
             <div id="cat-clicker">
-                <img id="cat-image" src="https://img.texasmonthly.com/2021/12/grumpy-cat.jpg?auto=compress&crop=faces&fit=fit&fm=pjpg&ixlib=php-3.3.1&q=45" alt="Кот-мем">
+                <img id="cat-image" src="https://i.imgur.com/3NLdQfy.jpeg" alt="Кот-мем">
                 <div id="click-effect"></div>
             </div>
             <p>За каждый клик: <strong>$0.10</strong></p>
@@ -291,76 +291,76 @@
         // Данные о товарах
         const products = [
             // Еда (10 товаров)
-            { id: 1, name: "Сухой корм для кошек", price: 5.00, category: "food", image: "https://img.freepik.com/free-photo/close-up-selective-focus-shot-dry-cat-food-bowl_181624-58210.jpg" },
-            { id: 2, name: "Влажный корм с лососем", price: 3.00, category: "food", image: "https://img.freepik.com/free-photo/cat-food-can-isolated-white-background_123827-27657.jpg" },
-            { id: 3, name: "Лакомства для зубов", price: 2.50, category: "food", image: "https://img.freepik.com/free-photo/cat-treats-bowl_1339-6103.jpg" },
-            { id: 4, name: "Паста для выведения шерсти", price: 4.00, category: "food", image: "https://img.freepik.com/free-photo/tube-cat-hairball-removal-paste_1339-6104.jpg" },
-            { id: 5, name: "Диетический корм", price: 6.00, category: "food", image: "https://img.freepik.com/free-photo/close-up-cat-food-bag_23-2148623518.jpg" },
-            { id: 6, name: "Корм для котят", price: 4.50, category: "food", image: "https://img.freepik.com/free-photo/kitten-food-package_1339-6099.jpg" },
-            { id: 7, name: "Корм с курицей", price: 5.50, category: "food", image: "https://img.freepik.com/free-photo/dry-cat-food-bowl_1339-6100.jpg" },
-            { id: 8, name: "Корм с индейкой", price: 5.00, category: "food", image: "https://img.freepik.com/free-photo/cat-food-package_1339-6102.jpg" },
-            { id: 9, name: "Беззерновой корм", price: 7.00, category: "food", image: "https://img.freepik.com/free-photo/grain-free-cat-food_1339-6101.jpg" },
-            { id: 10, name: "Корм для чувствительного желудка", price: 6.50, category: "food", image: "https://img.freepik.com/free-photo/cat-food-sensitive-stomach_1339-6098.jpg" },
+            { id: 1, name: "Сухой корм для кошек", price: 5.00, category: "food", image: "https://i.imgur.com/5sM8Q7a.jpeg" },
+            { id: 2, name: "Влажный корм с лососем", price: 3.00, category: "food", image: "https://i.imgur.com/8z8Z8Z8.jpeg" },
+            { id: 3, name: "Лакомства для зубов", price: 2.50, category: "food", image: "https://i.imgur.com/9sM8Q7a.jpeg" },
+            { id: 4, name: "Паста для выведения шерсти", price: 4.00, category: "food", image: "https://i.imgur.com/1sM8Q7a.jpeg" },
+            { id: 5, name: "Диетический корм", price: 6.00, category: "food", image: "https://i.imgur.com/2sM8Q7a.jpeg" },
+            { id: 6, name: "Корм для котят", price: 4.50, category: "food", image: "https://i.imgur.com/3sM8Q7a.jpeg" },
+            { id: 7, name: "Корм с курицей", price: 5.50, category: "food", image: "https://i.imgur.com/4sM8Q7a.jpeg" },
+            { id: 8, name: "Корм с индейкой", price: 5.00, category: "food", image: "https://i.imgur.com/5sM8Q7b.jpeg" },
+            { id: 9, name: "Беззерновой корм", price: 7.00, category: "food", image: "https://i.imgur.com/6sM8Q7a.jpeg" },
+            { id: 10, name: "Корм для чувствительного желудка", price: 6.50, category: "food", image: "https://i.imgur.com/7sM8Q7a.jpeg" },
             
             // Миски (10 товаров)
-            { id: 11, name: "Керамическая миска", price: 8.00, category: "bowls", image: "https://img.freepik.com/free-photo/ceramic-cat-bowl_1339-6110.jpg" },
-            { id: 12, name: "Миска из нержавеющей стали", price: 6.00, category: "bowls", image: "https://img.freepik.com/free-photo/stainless-steel-cat-bowl_1339-6109.jpg" },
-            { id: 13, name: "Автоматическая кормушка", price: 25.00, category: "bowls", image: "https://img.freepik.com/free-photo/automatic-pet-feeder_1339-6112.jpg" },
-            { id: 14, name: "Миска с подогревом", price: 15.00, category: "bowls", image: "https://img.freepik.com/free-photo/heated-cat-bowl_1339-6111.jpg" },
-            { id: 15, name: "Двойная миска для еды и воды", price: 10.00, category: "bowls", image: "https://img.freepik.com/free-photo/double-cat-bowl_1339-6108.jpg" },
-            { id: 16, name: "Пластиковая миска с рисунком", price: 4.00, category: "bowls", image: "https://img.freepik.com/free-photo/plastic-cat-bowl-pattern_1339-6107.jpg" },
-            { id: 17, name: "Миска на подставке", price: 12.00, category: "bowls", image: "https://img.freepik.com/free-photo/cat-bowl-stand_1339-6106.jpg" },
-            { id: 18, name: "Автопоилка-фонтан", price: 30.00, category: "bowls", image: "https://img.freepik.com/free-photo/cat-water-fountain_1339-6105.jpg" },
-            { id: 19, name: "Силиконовая складная миска", price: 7.00, category: "bowls", image: "https://img.freepik.com/free-photo/silicone-collapsible-cat-bowl_1339-6113.jpg" },
-            { id: 20, name: "Миска с именной гравировкой", price: 9.00, category: "bowls", image: "https://img.freepik.com/free-photo/personalized-cat-bowl_1339-6114.jpg" },
+            { id: 11, name: "Керамическая миска", price: 8.00, category: "bowls", image: "https://i.imgur.com/8sM8Q7a.jpeg" },
+            { id: 12, name: "Миска из нержавеющей стали", price: 6.00, category: "bowls", image: "https://i.imgur.com/9sM8Q7b.jpeg" },
+            { id: 13, name: "Автоматическая кормушка", price: 25.00, category: "bowls", image: "https://i.imgur.com/1sM8Q7b.jpeg" },
+            { id: 14, name: "Миска с подогревом", price: 15.00, category: "bowls", image: "https://i.imgur.com/2sM8Q7b.jpeg" },
+            { id: 15, name: "Двойная миска для еды и воды", price: 10.00, category: "bowls", image: "https://i.imgur.com/3sM8Q7b.jpeg" },
+            { id: 16, name: "Пластиковая миска с рисунком", price: 4.00, category: "bowls", image: "https://i.imgur.com/4sM8Q7b.jpeg" },
+            { id: 17, name: "Миска на подставке", price: 12.00, category: "bowls", image: "https://i.imgur.com/5sM8Q7c.jpeg" },
+            { id: 18, name: "Автопоилка-фонтан", price: 30.00, category: "bowls", image: "https://i.imgur.com/6sM8Q7b.jpeg" },
+            { id: 19, name: "Силиконовая складная миска", price: 7.00, category: "bowls", image: "https://i.imgur.com/7sM8Q7b.jpeg" },
+            { id: 20, name: "Миска с именной гравировкой", price: 9.00, category: "bowls", image: "https://i.imgur.com/8sM8Q7b.jpeg" },
             
             // Одежда (15 товаров)
-            { id: 21, name: "Свитер для кошки", price: 12.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-sweater_1339-6120.jpg" },
-            { id: 22, name: "Плащ для кота", price: 15.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-raincoat_1339-6119.jpg" },
-            { id: 23, name: "Футболка с принтом", price: 10.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-t-shirt_1339-6118.jpg" },
-            { id: 24, name: "Теплый комбинезон", price: 18.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-overall_1339-6117.jpg" },
-            { id: 25, name: "Праздничный костюм", price: 20.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-holiday-costume_1339-6116.jpg" },
-            { id: 26, name: "Пижама для кота", price: 14.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-pajamas_1339-6115.jpg" },
-            { id: 27, name: "Свитер с оленями", price: 16.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-reindeer-sweater_1339-6121.jpg" },
-            { id: 28, name: "Жилет для кота", price: 13.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-vest_1339-6122.jpg" },
-            { id: 29, name: "Костюм супергероя", price: 22.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-superhero-costume_1339-6123.jpg" },
-            { id: 30, name: "Толстовка с капюшоном", price: 17.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-hoodie_1339-6124.jpg" },
-            { id: 31, name: "Костюм пчелы", price: 19.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-bee-costume_1339-6125.jpg" },
-            { id: 32, name: "Свитер с рыбой", price: 14.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-fish-sweater_1339-6126.jpg" },
-            { id: 33, name: "Платье для кошки", price: 16.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-dress_1339-6127.jpg" },
-            { id: 34, name: "Костюм льва", price: 21.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-lion-costume_1339-6128.jpg" },
-            { id: 35, name: "Теплые носки для лап", price: 8.00, category: "clothing", image: "https://img.freepik.com/free-photo/cat-paw-socks_1339-6129.jpg" },
+            { id: 21, name: "Свитер для кошки", price: 12.00, category: "clothing", image: "https://i.imgur.com/9sM8Q7c.jpeg" },
+            { id: 22, name: "Плащ для кота", price: 15.00, category: "clothing", image: "https://i.imgur.com/1sM8Q7c.jpeg" },
+            { id: 23, name: "Футболка с принтом", price: 10.00, category: "clothing", image: "https://i.imgur.com/2sM8Q7c.jpeg" },
+            { id: 24, name: "Теплый комбинезон", price: 18.00, category: "clothing", image: "https://i.imgur.com/3sM8Q7c.jpeg" },
+            { id: 25, name: "Праздничный костюм", price: 20.00, category: "clothing", image: "https://i.imgur.com/4sM8Q7c.jpeg" },
+            { id: 26, name: "Пижама для кота", price: 14.00, category: "clothing", image: "https://i.imgur.com/5sM8Q7d.jpeg" },
+            { id: 27, name: "Свитер с оленями", price: 16.00, category: "clothing", image: "https://i.imgur.com/6sM8Q7c.jpeg" },
+            { id: 28, name: "Жилет для кота", price: 13.00, category: "clothing", image: "https://i.imgur.com/7sM8Q7c.jpeg" },
+            { id: 29, name: "Костюм супергероя", price: 22.00, category: "clothing", image: "https://i.imgur.com/8sM8Q7c.jpeg" },
+            { id: 30, name: "Толстовка с капюшоном", price: 17.00, category: "clothing", image: "https://i.imgur.com/9sM8Q7d.jpeg" },
+            { id: 31, name: "Костюм пчелы", price: 19.00, category: "clothing", image: "https://i.imgur.com/1sM8Q7d.jpeg" },
+            { id: 32, name: "Свитер с рыбой", price: 14.00, category: "clothing", image: "https://i.imgur.com/2sM8Q7d.jpeg" },
+            { id: 33, name: "Платье для кошки", price: 16.00, category: "clothing", image: "https://i.imgur.com/3sM8Q7d.jpeg" },
+            { id: 34, name: "Костюм льва", price: 21.00, category: "clothing", image: "https://i.imgur.com/4sM8Q7d.jpeg" },
+            { id: 35, name: "Теплые носки для лап", price: 8.00, category: "clothing", image: "https://i.imgur.com/5sM8Q7e.jpeg" },
             
             // Аксессуары (15 товаров)
-            { id: 36, name: "Ошейник с колокольчиком", price: 4.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-collar-bell_1339-6135.jpg" },
-            { id: 37, name: "Игрушка-мышка", price: 2.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-toy-mouse_1339-6134.jpg" },
-            { id: 38, name: "Когтеточка", price: 15.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-scratching-post_1339-6133.jpg" },
-            { id: 39, name: "Переноска для кота", price: 25.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-carrier_1339-6132.jpg" },
-            { id: 40, name: "Расческа для шерсти", price: 5.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-brush_1339-6131.jpg" },
-            { id: 41, name: "Лежанка для кота", price: 20.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-bed_1339-6130.jpg" },
-            { id: 42, name: "Интерактивная игрушка", price: 12.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-interactive-toy_1339-6136.jpg" },
-            { id: 43, name: "Лазерная указка", price: 8.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-laser-pointer_1339-6137.jpg" },
-            { id: 44, name: "Удочка-дразнилка", price: 6.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-teaser-wand_1339-6138.jpg" },
-            { id: 45, name: "Кошачья мята", price: 3.00, category: "accessories", image: "https://img.freepik.com/free-photo/catnip_1339-6139.jpg" },
-            { id: 46, name: "Ошейник с GPS", price: 35.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-gps-collar_1339-6140.jpg" },
-            { id: 47, name: "Шлейка для прогулок", price: 10.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-harness_1339-6141.jpg" },
-            { id: 48, name: "Зубная щетка для кота", price: 7.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-toothbrush_1339-6142.jpg" },
-            { id: 49, name: "Когтерез", price: 5.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-nail-clipper_1339-6143.jpg" },
-            { id: 50, name: "Фурминатор", price: 18.00, category: "accessories", image: "https://img.freepik.com/free-photo/cat-furminator_1339-6144.jpg" }
+            { id: 36, name: "Ошейник с колокольчиком", price: 4.00, category: "accessories", image: "https://i.imgur.com/6sM8Q7d.jpeg" },
+            { id: 37, name: "Игрушка-мышка", price: 2.00, category: "accessories", image: "https://i.imgur.com/7sM8Q7d.jpeg" },
+            { id: 38, name: "Когтеточка", price: 15.00, category: "accessories", image: "https://i.imgur.com/8sM8Q7d.jpeg" },
+            { id: 39, name: "Переноска для кота", price: 25.00, category: "accessories", image: "https://i.imgur.com/9sM8Q7e.jpeg" },
+            { id: 40, name: "Расческа для шерсти", price: 5.00, category: "accessories", image: "https://i.imgur.com/1sM8Q7e.jpeg" },
+            { id: 41, name: "Лежанка для кота", price: 20.00, category: "accessories", image: "https://i.imgur.com/2sM8Q7e.jpeg" },
+            { id: 42, name: "Интерактивная игрушка", price: 12.00, category: "accessories", image: "https://i.imgur.com/3sM8Q7e.jpeg" },
+            { id: 43, name: "Лазерная указка", price: 8.00, category: "accessories", image: "https://i.imgur.com/4sM8Q7e.jpeg" },
+            { id: 44, name: "Удочка-дразнилка", price: 6.00, category: "accessories", image: "https://i.imgur.com/5sM8Q7f.jpeg" },
+            { id: 45, name: "Кошачья мята", price: 3.00, category: "accessories", image: "https://i.imgur.com/6sM8Q7e.jpeg" },
+            { id: 46, name: "Ошейник с GPS", price: 35.00, category: "accessories", image: "https://i.imgur.com/7sM8Q7e.jpeg" },
+            { id: 47, name: "Шлейка для прогулок", price: 10.00, category: "accessories", image: "https://i.imgur.com/8sM8Q7e.jpeg" },
+            { id: 48, name: "Зубная щетка для кота", price: 7.00, category: "accessories", image: "https://i.imgur.com/9sM8Q7f.jpeg" },
+            { id: 49, name: "Когтерез", price: 5.00, category: "accessories", image: "https://i.imgur.com/1sM8Q7f.jpeg" },
+            { id: 50, name: "Фурминатор", price: 18.00, category: "accessories", image: "https://i.imgur.com/2sM8Q7f.jpeg" }
         ];
 
         // Данные о недвижимости для котов
         const realEstate = [
-            { id: 101, name: "Уютный домик для кота", price: 30.00, image: "https://img.freepik.com/free-photo/cozy-cat-house_1339-6150.jpg" },
-            { id: 102, name: "Лежанка с подогревом", price: 25.00, image: "https://img.freepik.com/free-photo/heated-cat-bed_1339-6149.jpg" },
-            { id: 103, name: "Комплекс с когтеточкой", price: 50.00, image: "https://img.freepik.com/free-photo/cat-tree-scratching-post_1339-6148.jpg" },
-            { id: 104, name: "Гамак для окна", price: 15.00, image: "https://img.freepik.com/free-photo/cat-window-hammock_1339-6147.jpg" },
-            { id: 105, name: "Игровой тоннель", price: 20.00, image: "https://img.freepik.com/free-photo/cat-play-tunnel_1339-6146.jpg" },
-            { id: 106, name: "Двухуровневый домик", price: 35.00, image: "https://img.freepik.com/free-photo/two-level-cat-house_1339-6145.jpg" },
-            { id: 107, name: "Подвесная лежанка", price: 18.00, image: "https://img.freepik.com/free-photo/hanging-cat-bed_1339-6151.jpg" },
-            { id: 108, name: "Домик-вигвам", price: 22.00, image: "https://img.freepik.com/free-photo/cat-teepee-house_1339-6152.jpg" },
-            { id: 109, name: "Кровать-кокон", price: 28.00, image: "https://img.freepik.com/free-photo/cat-cocoon-bed_1339-6153.jpg" },
-            { id: 110, name: "Многоуровневый комплекс", price: 65.00, image: "https://img.freepik.com/free-photo/multi-level-cat-complex_1339-6154.jpg" }
+            { id: 101, name: "Уютный домик для кота", price: 30.00, image: "https://i.imgur.com/3sM8Q7f.jpeg" },
+            { id: 102, name: "Лежанка с подогревом", price: 25.00, image: "https://i.imgur.com/4sM8Q7f.jpeg" },
+            { id: 103, name: "Комплекс с когтеточкой", price: 50.00, image: "https://i.imgur.com/5sM8Q7g.jpeg" },
+            { id: 104, name: "Гамак для окна", price: 15.00, image: "https://i.imgur.com/6sM8Q7f.jpeg" },
+            { id: 105, name: "Игровой тоннель", price: 20.00, image: "https://i.imgur.com/7sM8Q7f.jpeg" },
+            { id: 106, name: "Двухуровневый домик", price: 35.00, image: "https://i.imgur.com/8sM8Q7f.jpeg" },
+            { id: 107, name: "Подвесная лежанка", price: 18.00, image: "https://i.imgur.com/9sM8Q7g.jpeg" },
+            { id: 108, name: "Домик-вигвам", price: 22.00, image: "https://i.imgur.com/1sM8Q7g.jpeg" },
+            { id: 109, name: "Кровать-кокон", price: 28.00, image: "https://i.imgur.com/2sM8Q7g.jpeg" },
+            { id: 110, name: "Многоуровневый комплекс", price: 65.00, image: "https://i.imgur.com/3sM8Q7g.jpeg" }
         ];
 
         // Переменные состояния
@@ -416,7 +416,7 @@
                 const productElement = document.createElement('div');
                 productElement.classList.add('product');
                 productElement.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}">
+                    <img src="${product.image}" alt="${product.name}" onerror="this.src='https://i.imgur.com/6sM8Q7d.jpeg'">
                     <h3>${product.name}</h3>
                     <p>$${product.price.toFixed(2)}</p>
                     <button class="buy-btn" data-id="${product.id}" ${balance < product.price ? 'disabled' : ''}>Купить</button>
@@ -441,7 +441,7 @@
                 const itemElement = document.createElement('div');
                 itemElement.classList.add('product');
                 itemElement.innerHTML = `
-                    <img src="${item.image}" alt="${item.name}">
+                    <img src="${item.image}" alt="${item.name}" onerror="this.src='https://i.imgur.com/3sM8Q7f.jpeg'">
                     <h3>${item.name}</h3>
                     <p>$${item.price.toFixed(2)}</p>
                     <button class="buy-btn" data-id="${item.id}" ${balance < item.price ? 'disabled' : ''}>Купить</button>
